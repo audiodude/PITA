@@ -10,6 +10,8 @@ import getpass
 from crontab import CronTab
 
 my_cron = CronTab(user=getpass.getuser())
-pulldatajob = my_cron.new(command = 'python ' + os.path.join(os.getcwd(), 'PullCurrentData' + '.' + 'py'))
+pulldatajob = my_cron.new(
+    command='python ' +
+    os.path.join(os.getcwd(), 'PullCurrentData' + '.' + 'py'))
 pulldatajob.minute.every(1)
 my_cron.write()

@@ -3,3 +3,4 @@ pita.sublime-workspace
 *.pyc
 *.db
 *.csv
+venv/

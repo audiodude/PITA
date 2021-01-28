@@ -8,11 +8,11 @@ Created on Fri Mar 08 09:38:27 2019
 import os
 import time
 from datetime import date
-disconfilename = str(date.today())+'.db'
+disconfilename = str(date.today()) + '.db'
 os.rename('pita.db', disconfilename)
 try:
-    import CreateDatabase
+  import CreateDatabase
 except:
-    print "error"
-    time.sleep(5)
-os.system("rclone move "+disconfilename+" jrp-box:pita/")
+  print("error")
+  time.sleep(5)
+os.system("rclone move " + disconfilename + " jrp-box:pita/")

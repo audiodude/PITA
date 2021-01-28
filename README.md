@@ -1,8 +1,10 @@
 # PITA
 
 PredictIt Tracking and Analysis  
+
 Python 3.8 fork (original in Python 2.7)
-requires Unix/Linux for Cron scheduling
+
+Requires Unix/Linux or macOS for Cron scheduling
 
 # Features
 
